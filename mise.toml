@@ -1,4 +1,3 @@
 [tools]
 python = "3.12"
 uv = "latest"
-hexlet-knit = "latest"
