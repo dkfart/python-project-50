@@ -26,7 +26,7 @@ jobs:
       - name: Install dependencies
         run: make install
       - name: Run checks
-        run: mise exec -- hk check --all
+        run: make lint
       # Порог покрытия задан в pyproject.toml ([tool.coverage.report] fail_under),
       # поэтому шаг падает при просадке покрытия, и бейджик CI отражает в том числе его
       - name: Run test coverage
