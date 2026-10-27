@@ -22,7 +22,7 @@ cd python-project-50
 
 ## Использование
 
-<!-- Добавьте примеры запуска и запись asciinema — именно это смотрит работодатель -->
+[![asciicast](https://asciinema.org/a/ozgE9YnLoc850QxB.svg)](https://asciinema.org/a/ozgE9YnLoc850QxB)
 
 ---
 
