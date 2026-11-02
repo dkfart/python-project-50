@@ -12,13 +12,14 @@ def main():
     parser.add_argument('second_file', type=str)
     parser.add_argument(
         '-f', '--format',
+        default='stylish',  # Задаем дефолтный формат в CLI
         help='set format of output',
         metavar='FORMAT'
     )
 
     args = parser.parse_args()
 
-    diff = generate_diff(args.first_file, args.second_file)
+    diff = generate_diff(args.first_file, args.second_file, args.format)
     print(diff)
 
 
