@@ -1,4 +1,7 @@
-import json
+import os
+import pathlib
+
+from gendiff.parser import parse
 
 
 def to_str(value):
@@ -9,12 +12,18 @@ def to_str(value):
     return str(value)
 
 
-def generate_diff(file_path1, file_path2):
-    with open(file_path1) as f1:
-        data1 = json.load(f1)
+def get_data(file_path):
+    _, extension = os.path.splitext(file_path)
+    format_name = extension.strip('.').lower()
+    
+    content = pathlib.Path(file_path).read_text()
+        
+    return parse(content, format_name)
 
-    with open(file_path2) as f2:
-        data2 = json.load(f2)
+
+def generate_diff(file_path1, file_path2):
+    data1 = get_data(file_path1)
+    data2 = get_data(file_path2)
 
     all_keys = sorted(list(data1.keys() | data2.keys()))
     
@@ -32,5 +41,4 @@ def generate_diff(file_path1, file_path2):
                 f"  + {key}: {to_str(data2[key])}"
             ))
 
-    result = ['{', *lines, '}']
-    return '\n'.join(result)
+    return '\n'.join(['{', *lines, '}'])
