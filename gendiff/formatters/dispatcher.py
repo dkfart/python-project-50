@@ -1,3 +1,4 @@
+from gendiff.formatters.json import format_json
 from gendiff.formatters.plain import format_plain
 from gendiff.formatters.stylish import format_stylish
 
@@ -7,4 +8,6 @@ def get_formatter(format_name):
         return format_stylish
     if format_name == 'plain':
         return format_plain
+    if format_name == 'json':
+        return format_json
     raise ValueError(f"Unknown format: {format_name}")
