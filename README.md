@@ -22,11 +22,14 @@ cd python-project-50
 
 ## Использование
 
-[![asciicast](https://asciinema.org/a/ozgE9YnLoc850QxB.svg)](https://asciinema.org/a/ozgE9YnLoc850QxB)
+### Демонстрация формата Stylish (по умолчанию)
+[![asciicast](https://asciinema.org/a/yOR8knYpyzqF9xTu.svg)](https://asciinema.org/a/yOR8knYpyzqF9xTu)
 
-[![asciicast](https://asciinema.org/a/SDKY8cbDttUZhpbx.svg)](https://asciinema.org/a/SDKY8cbDttUZhpbx)
+### Демонстрация формата Plain
+[![asciicast](https://asciinema.org/a/K04yBfFnwWsru1Pc.svg)](https://asciinema.org/a/K04yBfFnwWsru1Pc)
 
-[![asciicast](https://asciinema.org/a/0BVmqLa8UUnXI3qx.svg)](https://asciinema.org/a/0BVmqLa8UUnXI3qx)
+### Демонстрация формата JSON
+[![asciicast](https://asciinema.org/a/4QVHOOjoMTlh8TDJ.svg)](https://asciinema.org/a/4QVHOOjoMTlh8TDJ)
 
 ---
 
