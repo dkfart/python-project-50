@@ -1,8 +1,15 @@
 install:
 	uv sync
 
+gendiff:
+	uv run gendiff
+
 lint:
-	uv run ruff check gendiff --fix --unsafe-fixes
+	uv run ruff check gendiff tests
+
+lint-fix:
+	uv run ruff check gendiff tests --fix --unsafe-fixes
+
 test:
 	uv run pytest
 
